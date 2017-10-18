@@ -1,0 +1,36 @@
+import math
+
+print("The Splash God and the leader of the BRP (Bengali Referendum Party) have constructed a piece of art that will calculate the area of a triangle 3 ways.                               Type 1 if you know the base and the height.                                                  Type 2 if you know 2 sides and the angle they form.                                          Type 3 if you know all 3 sides")
+
+answer = int(input("Type 1,2 or 3: "))
+  
+#Check for invalid input
+if (answer != 1 and answer != 2 and answer != 3):
+  answer = int(input("Type 1,2 or 3: "))
+  
+#If user inputs '1'...
+
+if(answer == 1):
+  base = float(input("Enter the base (in cm)"))
+  height = float(input("Enter the height (in cm)"))
+  area = 0.5*base*height
+  print("The area of the triangle is ", area)
+  
+#If user inputs '2'...
+
+if(answer ==2):
+  side1 = float(input("Enter the length of side 1 (in cm)"))
+  side2 = float(input("Enter the length of side 2 (in cm)"))
+  angle = float(input("Enter the angle created by the vertex of side 1 and side 2 (in degrees)"))
+  area = 0.5*side1*side2*math.sin(anglerad)
+  print("The area of the triangle is ", area)
+  
+#If user inputs '3'...
+
+if(answer == 3):
+  side1 = float(input("Enter the length of side 1 (in cm)"))
+  side2 = float(input("Enter the length of side 2 (in cm)"))
+  side3 = float(input("Enter the length of side 3 (in cm)"))
+  semiperimeter = (side1 + side2 +side3)/2
+  area = math.sqrt(semiperimeter*(semiperimeter - side1)*(semiperimeter - side2)* (semiperimeter - side3))
+  print("The area of the triangle is ", area)
