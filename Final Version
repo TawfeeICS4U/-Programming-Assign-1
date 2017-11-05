@@ -42,7 +42,7 @@ def area(triangle_type):
 
 
 
-print("""We have constructed a piece of art that will calculate the area of a
+print("""We have constructed a program that will calculate the area of a
 triangle 3 ways. 
 Type 1 if you know the base and the height.
 Type 2 if you know 2 sides and the angle they form.
