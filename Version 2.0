@@ -1,6 +1,6 @@
 import math
 
-print("The Splash God and the leader of the BRP (Bengali Referendum Party) have constructed a piece of art that will calculate the area of a triangle 3 ways.                               Type 1 if you know the base and the height.                                                  Type 2 if you know 2 sides and the angle they form.                                          Type 3 if you know all 3 sides")
+print("We have constructed a program that will calculate the area of a triangle 3 ways.                               Type 1 if you know the base and the height.                                                  Type 2 if you know 2 sides and the angle they form.                                          Type 3 if you know all 3 sides")
 
 answer = int(input("Type 1,2 or 3: "))
   
